@@ -1,0 +1,13 @@
+name: CI-CD-PIPELINE
+on:
+ push:
+   branches:
+    - main
+jobs:
+ binil-ci-cd:
+  runs-on: ubuntu-slim
+  steps:
+   - name: simple echo command
+     run: echo "HELLO FROM BINIL"
+   - run: date
+  
